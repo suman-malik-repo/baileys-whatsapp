@@ -15,6 +15,13 @@ async function startServer() {
 
  await startWhatsApp()
 
+ app.get("/ping", (req, res) => {
+  res.json({
+    status: "alive",
+    time: new Date().toISOString()
+  });
+});
+
  app.listen(PORT, () => {
   console.log("Server running on port", PORT)
  })
