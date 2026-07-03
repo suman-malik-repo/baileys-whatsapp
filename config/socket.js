@@ -9,7 +9,6 @@ const qrcode = require("qrcode-terminal")
 const P = require("pino")
 
 let sock
-
 async function startWhatsApp() {
 
  const { state, saveCreds } = await useMultiFileAuthState("./auth")
