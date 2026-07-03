@@ -10,7 +10,6 @@ const P = require("pino")
 
 let sock
 
-
 async function startWhatsApp() {
 
  const { state, saveCreds } = await useMultiFileAuthState("./auth")
